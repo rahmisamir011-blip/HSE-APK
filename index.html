@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE Checker - Téléchargement</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Preload Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Using Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom light red background */
+        body {
+            background-color: #fef2f2; /* This is tailwind's red-50 */
+        }
+        /* Style for Tailwind's prose list items */
+        .prose ul > li::before {
+            background-color: #ef4444; /* red-500 */
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <!-- Main content container -->
+    <!-- max-w-3xl rend le site compatible avec le bureau, w-full le rend compatible avec le mobile -->
+    <div class="w-full max-w-3xl mx-auto bg-white rounded-xl shadow-2xl p-8 md:p-12 overflow-hidden">
+        
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <!-- Icon -->
+            <div class="flex justify-center mb-6">
+                <svg class="w-20 h-20 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+            </div>
+            <!-- Mises à jour des tailles de police pour mobile (text-3xl) et bureau (md:text-4xl) -->
+            <h1 class="text-3xl md:text-4xl font-bold text-red-600 mb-3">HSE Checker</h1>
+            <p class="text-lg md:text-xl text-gray-700">Votre assistant sécurité intelligent</p>
+        </div>
+
+        <!-- Description Section (from user) -->
+        <!-- La classe 'prose' gère automatiquement la responsivité de la typographie -->
+        <div class="prose prose-lg max-w-none text-gray-800">
+            <p>Assurez la conformité de vos équipes avant l’entrée en zone de production grâce à <strong>HSE Checker</strong>, l’application qui utilise l’intelligence artificielle pour vérifier automatiquement le port des équipements de protection individuelle (EPI).</p>
+            <p>Prenez une photo ou importez une image, et laissez l’IA analyser la conformité de votre tenue selon les normes de sécurité du secteur pharmaceutique. En quelques secondes, l’application identifie les éléments portés correctement et ceux manquants, puis vous fournit un rapport clair et visuel.</p>
+            
+            <h2 class="text-2xl font-semibold text-red-600 mt-8 mb-4">Fonctionnalités principales :</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><strong>Analyse automatique par image :</strong> prenez une photo ou sélectionnez-en une depuis votre galerie.</li>
+                <li><strong>Détection intelligente via Gemini AI :</strong> vérifie la présence et le bon port des EPI obligatoires :
+                    <ul class="list-['_'] pl-5 mt-2 space-y-1">
+                        <li>Charlotte pour les cheveux</li>
+                        <li>Masque</li>
+                        <li>Combinaison de protection</li>
+                        <li>Gants</li>
+                        <li>Chaussures de sécurité</li>
+                    </ul>
+                </li>
+                <li><strong>Rapport détaillé :</strong> affiche la liste complète des EPI avec ✅ ou ❌ selon la conformité.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-red-600 mt-8 mb-4">Interface simple et élégante :</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Design épuré, fond blanc avec des touches de rouge clair.</li>
+                <li>Page d’accueil : "HSE Checker" avec un grand bouton central “افحصني”.</li>
+                <li>Navigation intuitive et rapide.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-red-600 mt-8 mb-4">Pourquoi choisir HSE Checker ?</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>✅ Fiabilité et rapidité grâce à l’IA.</li>
+                <li>✅ Réduction des risques liés à la non-conformité.</li>
+                <li>✅ Gain de temps pour les responsables HSE.</li>
+                <li>✅ Outil simple et efficace pour garantir la sécurité de tous les employés avant l’accès à la zone de production.</li>
+            </ul>
+        </div>
+
+        <!-- Download Section -->
+        <div class="mt-12 border-t-2 border-red-100 pt-10 text-center">
+            <!-- Mises à jour des tailles de police pour mobile (text-2xl) et bureau (md:text-3xl) -->
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Télécharger l'application</h2>
+            
+            <div class="bg-gray-100 p-4 rounded-lg my-6 max-w-sm mx-auto">
+                <p class="text-sm text-gray-500">Fichier :</p>
+                <p class="text-lg font-medium text-gray-900">HSE Checker</p>
+            </div>
+
+            <!-- 
+              NOTE IMPORTANTE : 
+              J'ai changé le 'href' pour qu'il pointe vers un fichier local.
+              Suivez les étapes dans ma réponse pour que cela fonctionne.
+            -->
+            <a href="HSE-Checker.apk" 
+               download="HSE-Checker.apk"
+               class="inline-block w-full max-w-sm px-6 py-4 text-lg font-medium text-white bg-red-500 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:bg-red-600 focus:outline-none focus:ring-4 focus:ring-red-300">
+                Télécharger l'APK
+            </a>
+
+            <p class="text-xs text-gray-400 mt-6">Cette application est pour les appareils Android uniquement.</p>
+        </div>
+
+    </div> <!-- End main content container -->
+
+</body>
+</html>
+
+
